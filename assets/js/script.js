@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Creamos una Función Flecha que nos dará un Console.log("Hola Mundo")
+// Creamos una Función Flecha que se ejecutará al dar click en el botón
 const formSubmitted = () => {
 
-    console.log("Hola Mundo");
+    console.log("Probando SweetAlert 2");
+    Swal.fire({position: 'center',icon: 'success',title: '💪🏻 Reserva Envida', text: '📩 Instrucciones en tu correo electrónico', showConfirmButton: false, timer: 4000 }) ;
 
 }
-
 
