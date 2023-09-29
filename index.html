@@ -101,10 +101,62 @@
                         <h3 class="mb-5 is-size-6 has-text-grey has-text-weight-bold" style="letter-spacing: 0px">Te adjuntamos el Programa en PDF</h3>
 
                         <!-- Componentes del Formulario ...  -->
+                        <!-- Nombre Completo -->
+                        <div class="field">
 
+                            <div class="control">
+                                <!-- Validación HTML: Campo Requerido & Regex para Solo Letras y Espacios  -->
+                                <input class="input" type="text" placeholder="Nombre Completo" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]+$" title="- Solo Letras y Espacios" value="Juan Perez Astorga">
+
+                            </div>
+
+                        </div>
+                        <!-- Rol Único Nacional ( Chile )  -->
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Rol Único Nacional ( Chile )" pattern="[0-9]{7,8}-?[0-9Kk]{1}" title="- Ingresa un RUN válido (sin puntos y con guión opcional)" value="10123123-K">
+                            </div>
+                        </div>
                     </form>
 
+                    <!-- Correo Electrónico -->
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="email" placeholder="Correo Electrónico" value="perez.juan.a@gmail.com">
+                        </div>
+                    </div>
+                    <!-- WhatsApp Chile -->
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="WhatsApp Chile +569" pattern="^\+56\d{9}$" title="Ingresa un número de WhatsApp chileno válido" value="+56912341234">
+                        </div>
+                    </div>
+                    <!-- Selección de Servicio -->
+                    <div class="field">
+                        <div class="control">
+                            <div class="select is-fullwidth">
 
+                                <select required >
+
+                                    <option value="" disabled selected >Selecciona un Servicio</option>
+                                    <option value="servicio-1">Servicio 1</option>
+                                    <option value="servicio-2">Servicio 2</option>
+                                    <option value="servicio-3">Servicio 3</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NewsLetter -->
+                    <div class="field">
+                        <label class="checkbox mb-2">
+                            <input class="checkbox mr-2 " type="checkbox" name="terms" value="1" checked>
+                            <small class="has-text-grey-dark">Acepto recibir Promociones y Novedades</small>
+                        </label>
+                    </div>
+                    <!-- Botón de Envío -->
+                    <button class="button is-primary py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio</button>
                     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
                     
