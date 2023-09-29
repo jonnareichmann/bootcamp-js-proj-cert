@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const formSubmitted = () => {
 
     console.log("Probando SweetAlert 2");
-    Swal.fire({position: 'center',icon: 'success',title: '💪🏻 Reserva Envida', text: '📩 Instrucciones en tu correo electrónico', showConfirmButton: false, timer: 4000 }) ;
+    Swal.fire({position: 'center',icon: 'success',title: '💪🏻 Reserva Enviada', text: '📩 Instrucciones en tu correo electrónico', showConfirmButton: false, timer: 4000 }) ;
 
 }
 
