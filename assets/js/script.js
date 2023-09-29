@@ -26,4 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Creamos una Función Flecha que nos dará un Console.log("Hola Mundo")
+const formSubmitted = () => {
+
+    console.log("Hola Mundo");
+
+}
+
 

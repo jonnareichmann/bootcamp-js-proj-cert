@@ -17,6 +17,9 @@
     <!-- Script JS-->
     <script src="assets/js/script.js"></script>
 
+    <!-- SweetAlert2 11.0.0 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer ></script>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://bulma.io/favicons/apple-touch-icon.png?v=201701041855">
     <link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
@@ -156,7 +159,7 @@
                         </label>
                     </div>
                     <!-- Botón de Envío -->
-                    <button class="button is-primary py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio</button>
+                    <button id="button_submit_form" onclick="formSubmitted()" class="button is-primary py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio</button>
                     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
                     
