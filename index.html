@@ -94,8 +94,11 @@
                     <!-- Formulario de Captura de Datos  -->
                     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-
-                    <form action="#" >
+                    
+                    <!-- iFrame para que el formulario no redireccione a Google Form  -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    
+                    <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeTt-ti6JxPf1r_gdAd8a5hgB16ypgGpF2BycWEachIr6dXTA/formResponse" onsubmit="formSubmitted()" target="hidden_iframe">
 
                         <!-- Título del Formulario -->
                         <span class="is-size-3 has-text-weight-bold" style="letter-spacing: -1px">Reserva tu Servicio</span>
@@ -109,7 +112,7 @@
 
                             <div class="control">
                                 <!-- Validación HTML: Campo Requerido & Regex para Solo Letras y Espacios  -->
-                                <input class="input" type="text" placeholder="Nombre Completo" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]+$" title="- Solo Letras y Espacios" value="Juan Perez Astorga">
+                                <input name="entry.765837070" class="input" type="text" placeholder="Nombre Completo" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]+$" title="- Solo Letras y Espacios" value="Juan Perez Astorga">
 
                             </div>
 
@@ -117,21 +120,21 @@
                         <!-- Rol Único Nacional ( Chile )  -->
                         <div class="field">
                             <div class="control">
-                                <input class="input" type="text" placeholder="Rol Único Nacional ( Chile )" pattern="[0-9]{7,8}-?[0-9Kk]{1}" title="- Ingresa un RUN válido (sin puntos y con guión opcional)" value="10123123-K">
+                                <input name="entry.1312953509" class="input" type="text" placeholder="Rol Único Nacional ( Chile )" pattern="[0-9]{7,8}-?[0-9Kk]{1}" title="- Ingresa un RUN válido (sin puntos y con guión opcional)" value="10123123-K">
                             </div>
                         </div>
-                    </form>
+                 
 
                     <!-- Correo Electrónico -->
                     <div class="field">
                         <div class="control">
-                            <input class="input" type="email" placeholder="Correo Electrónico" value="perez.juan.a@gmail.com">
+                            <input name="entry.393794264" class="input" type="email" placeholder="Correo Electrónico" value="perez.juan.a@gmail.com">
                         </div>
                     </div>
                     <!-- WhatsApp Chile -->
                     <div class="field">
                         <div class="control">
-                            <input class="input" type="text" placeholder="WhatsApp Chile +569" pattern="^\+56\d{9}$" title="Ingresa un número de WhatsApp chileno válido" value="+56912341234">
+                            <input name="entry.2142481467" class="input" type="text" placeholder="WhatsApp Chile +569" pattern="^\+56\d{9}$" title="Ingresa un número de WhatsApp chileno válido" value="+56912341234">
                         </div>
                     </div>
                     <!-- Selección de Servicio -->
@@ -139,7 +142,7 @@
                         <div class="control">
                             <div class="select is-fullwidth">
 
-                                <select required >
+                                <select name="entry.994865050" required >
 
                                     <option value="" disabled selected >Selecciona un Servicio</option>
                                     <option value="servicio-1">Servicio 1</option>
@@ -154,15 +157,15 @@
                     <!-- NewsLetter -->
                     <div class="field">
                         <label class="checkbox mb-2">
-                            <input class="checkbox mr-2 " type="checkbox" name="terms" value="1" checked>
+                            <input name="entry.945882650" class="checkbox mr-2 " type="checkbox" name="terms" value="1" checked>
                             <small class="has-text-grey-dark">Acepto recibir Promociones y Novedades</small>
                         </label>
                     </div>
                     <!-- Botón de Envío -->
-                    <button id="button_submit_form" onclick="formSubmitted()" class="button is-primary py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio</button>
+                    <button id="button_submit_form" class="button is-primary py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio</button>
                     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-                    
+                </form>
 
                 </div>
             </div>
